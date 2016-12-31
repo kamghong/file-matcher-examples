@@ -1,0 +1,20 @@
+{
+  "name": "basic-search-es",
+  "version": "1.0.0",
+  "description": "Simple example using file-matcher library in Ecmascript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.org/mauriciovigolo/file-matcher-examples"
+  },
+  "keywords": [
+    "file-matcher",
+    "basic example",
+    "ecmascript"
+  ],
+  "author": "Mauricio Gemelli Vigolo",
+  "license": "MIT",
+  "dependencies": {
+    "file-matcher": "^1.0.0-rc.3"
+  }
+}
