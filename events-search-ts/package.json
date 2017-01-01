@@ -1,7 +1,7 @@
 {
-  "name": "basic-search-ts",
+  "name": "events-search-ts",
   "version": "1.0.0",
-  "description": "Simple example using file-matcher library in Typescript",
+  "description": "Listening to the file-matcher events",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,15 +9,17 @@
   },
   "keywords": [
     "file-matcher",
-    "basic example",
+    "events",
     "typescript"
   ],
   "author": "Mauricio Gemelli Vigolo",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^6.0.55"
+    "@types/node": "^6.0.55",
+    "@types/progress": "^1.1.28"
   },
   "dependencies": {
-    "file-matcher": "^1.0.0-rc.3"
+    "file-matcher": "^1.0.0-rc.3",
+    "node-progress": "^0.1.0"
   }
 }
