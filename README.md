@@ -18,7 +18,7 @@ The examples are:
 ``` npm i ``` to install the dependencies.
 
 3. For typescript examples:
-    - Be sure that you have Typescript installed globally. `npm i -g Typescript@latest`.
+    - Be sure that you have typescript installed globally. `npm i -g typescript@latest`.
     - Need to run ```tsc``` from command line.
     - If you make any changes in the example, erase the build directory and run tsc again.
 
