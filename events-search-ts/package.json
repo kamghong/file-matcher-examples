@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "file-matcher": "^1.0.0-rc.3",
-    "node-progress": "^0.1.0"
+    "progress": "^1.1.8"
   }
 }

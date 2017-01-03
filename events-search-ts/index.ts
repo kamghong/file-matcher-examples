@@ -1,8 +1,8 @@
 import * as path from 'path';
+import * as Progress from 'progress';
 import { FileMatcher, FindOptions, PredicateOperator, FileFilter, AttributeType } from 'file-matcher';
 
 let fileMatcher = new FileMatcher();
-let progress
 
 let dir = path.resolve(__dirname, '../node_modules');
 
@@ -31,15 +31,16 @@ fileMatcher.find(criteria)
         console.log('Ops an error happened', error);
     });
 
-// Listening to the library events
-fileMatcher.on('preSearchDirectory', dir => {
-    console.log('> preSearchDirectory: ', dir);
+
+// Initializing node-progress
+let progress: Progress = new Progress('Search progress [:bar] -> from contentMatch Event', {
+    complete: '=',
+    incomplete: '.',
+    width: 20,
+    total: 100
 });
 
-fileMatcher.on('endSearchDirectory', (files, totalOfFiles) => {
-    console.log('<< endSearchDirectory: ', files, totalOfFiles);
-});
-
+// Listening to contentMatch event to update the progress bar
 fileMatcher.on('contentMatch', (file, processed) => {
-    console.log('<< contentMatch: ', file, processed);
+    progress.update(processed);
 });
