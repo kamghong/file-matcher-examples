@@ -11,22 +11,18 @@ The examples are:
 
 ## Steps to use it 
 
-1 - First clone the file matcher examples repository:
-
+1. First clone the file matcher examples repository:
 ``` git clone https://git.com/mauriciovigolo/file-matcher-examples.git ``` 
 
-2 - Access any folder example and type:
+2. Access any folder example and type:
+``` npm i ``` to install the dependencies.
 
-``` npm i ```
+3. For typescript examples:
+    - Be sure that you have Typescript installed globally. `npm i -g Typescript@latest`.
+    - Need to run ```tsc``` from command line.
+    - If you make any changes in the example, erase the build directory and run tsc again.
 
-to install the dependencies.
-
-3 - For typescript examples, be sure that you have Typescript installed globally.
-
-``` npm i -g Typescript@latest ```
-
-4 - Execute the code as:
-
+4. Execute the code as:
 ``` node index ```
 
 Thanks for using this library and feel free to post any comments and doubts in our [gitter](https://gitter.im/mauriciovigolo/file-matcher) im.
